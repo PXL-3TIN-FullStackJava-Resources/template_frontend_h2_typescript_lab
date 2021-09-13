@@ -47,7 +47,7 @@ De contact klasse is nu klaar voor gebruik. Ga naar de file ```./src/app/app.com
 
 ```
     const c1: Contact = new Contact("Dries Swinnen", "dries.swinnen@pxl.be", "12345");
-    const c2: Contact = new Contact("Dries Swinnen", "dries.swinnen@pxl.be", "12345", true);
+    const c2: Contact = new Contact("Tom Schuyten", "tom.schuyten@pxl.be", "678901234", true);
     console.log(c1);
     console.log(c2);
 ```
