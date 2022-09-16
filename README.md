@@ -17,7 +17,7 @@ Open het project een een IDE. Maak in de folder ```./src/app``` een nieuw bestan
 
 Voorzie volgende typescript code in de file contact.model.ts:
 
-```
+```typescript
 class Contact {
 	name: string;
 	email: string;
@@ -27,14 +27,14 @@ class Contact {
 ```
 
 De klasse is nu aangemaakt, maar kan nog niet gebruikt worden. Wil je deze klasse gebruiken in een ander bestand, dan moet je de klassen exporteren. Voorzie het ```export``` keyword voor de class definitie als volgt:
-```
+```typescript
 export class Contact{
     ...
 }
 ```
 
 Voor het gemak voeg je ook nog onderstaande constructor toe aan de Contact klasse:
-```
+```typescript
   constructor(name: string, email: string, phone: string, isFavorite: boolean = false){
 		this.name = name;
 		this.email = email;
@@ -45,9 +45,9 @@ Voor het gemak voeg je ook nog onderstaande constructor toe aan de Contact klass
 
 De contact klasse is nu klaar voor gebruik. Ga naar de file ```./src/app/app.component.ts```. In de methode ```ngOnInit``` voorzie je onderstaande code:
 
-```
+```typescript
     const c1: Contact = new Contact("Dries Swinnen", "dries.swinnen@pxl.be", "12345");
-    const c2: Contact = new Contact("Dries Swinnen", "dries.swinnen@pxl.be", "12345", true);
+    const c2: Contact = new Contact("Tom Schuyten", "tom.schuyten@pxl.be", "678901234", true);
     console.log(c1);
     console.log(c2);
 ```
